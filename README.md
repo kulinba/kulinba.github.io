@@ -1,5 +1,5 @@
 # kulinba.github.io
-##BMAP Program
+## BMAP Program
 placeholder site
 ##Description
 This was a placeholder site for balkansmedia.org
