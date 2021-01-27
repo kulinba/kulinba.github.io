@@ -5,11 +5,9 @@
         <meta type=author content="Internews Balkans">
         <meta type=keywords content="Internews Balkans, Balkan Media, Media">
         <!-- Bootstrap core CSS -->
-   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-        
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">    
         <link rel="stylesheet" type="text/css" href="style.css">
         <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-        
         <link href="font-awesome.min.css" rel="stylesheet">
 
         <style>
@@ -17,8 +15,16 @@
 @import url(https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css); 
             
 body {
-  background: darkblue;
-  font-family: 'Roboto Condensed', sans-serif;
+  
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.description {
+  margin-left: 70px;
+  padding: 25px;
+  text-align: justify;
+  font-size: 3rem;
 }
             
 a {
@@ -34,7 +40,7 @@ a:hover, a:focus {
 }
 
             p{
-                color: white;
+                color: black;
                 font-size: 16px;
                 text-align: center;
             }
@@ -52,10 +58,10 @@ h1 {
             
 h2 {
     font-size: 68px;
-    color: white;
+    color: darkblue;
     text-align: center;
     padding-top: 0px;
-    padding-bottom: 50px;
+    /**padding-bottom: 25px;**/
             }
             
 h3{
@@ -64,7 +70,12 @@ font-size: 45px;
 font-weight: 200;
                 
             }
-header{
+.naslov{
+  font-size: 15rem;
+  font-weight: bolder;
+  color: orange;
+}
+            header{
   background-color: white;
   max-width: auto;
   height: 15em;
@@ -85,18 +96,25 @@ header{
   font-size: 68px;
   color: white;
   display: block;
-  padding-bottom: 50px;
   padding-top: 50px;
   font-weight: 100;
   text-align: center;
-  margin-bottom: 3rem!important;
+  margin-bottom: 1rem!important;
 }
             
             .subtitle{
                 font-weight: 100;
+                color: white;
+                padding-top: 2rem;
                 
             }
             
+            .subtitle0{
+                font-weight: 100;
+                color: orange;
+                text-align: center;
+                
+            }
 .countries{
     color: darkorange;
     display: block;
@@ -104,7 +122,12 @@ header{
     text-align: center;
     margin-bottom: 3rem!important;
 }
-            
+
+sup{
+  color: darkorange;
+  font-weight: 700;
+  text-align: left;
+}
 
 .logo{
 max-width:250px;
@@ -134,18 +157,15 @@ vertical-align: middle;
 }
             
 .h100{
-                height: 100%;
+                
+                background: darkblue;
+                width: 100%;
+                max-height: 100%;
                           }
-.row{
-            display: flex;
-            flex-wrap: wrap;
-            margin-right: -15px;
-            margin-left:-15px;
-        max-width: 500px;
-        margin-bottom: 100px;
-        text-align: center;
-            }
-            
+
+section{
+  margin-top: 25px;
+}
 
 #wrapper{width:100%; height:50px;}
             
@@ -195,7 +215,372 @@ button{
   width: 4rem;
 }
 
-            
+.dot{
+  height: 50px;
+  width: 50px;
+  background-color: orange;
+  border-radius: 50%;
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  position: relative;
+  margin: 10vh auto 0; /*OPTIONAL MARGIN*/
+}     
+
+.text {
+  font-size: 2rem;
+  color: orange;
+}
+.circle {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+ padding: 120px;
+  background: orange;
+  border: 3px solid white;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.strong{
+  font-size: 25rem;
+  font-weight: bolder;
+  color: navy;
+}
+
+.strong .subtitle {
+  font-size: 2rem;
+  font-weight: normal;
+  color: blue;
+}
+
+/*CIRCLES & DATA */
+.pie
+{
+    width: 140px;
+    height: 140px;
+    position: relative;
+    border-radius: 140px;
+    background-color: navy;
+    float:left;
+    margin-right:10px;
+}
+
+.pie69
+{
+    width: 930px;
+    height: 930px;
+    position: relative;
+    border-radius: 930px;
+    background-color: red;
+    float:left;
+    margin-right:10px;
+}
+    .rings
+{
+    height:200px;
+    padding-left:2em;
+}
+.pie .title
+{
+    position:absolute;
+    bottom:-40px;
+    text-align: center;
+    width:100%;
+	color:navy;
+}
+.content
+{
+
+    width:100px;
+    height:100px;
+    border-radius:50%;
+    /*background-color:#fff;*/
+    position:absolute;
+    top:20px;
+    left:20px;
+    line-height: 100px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:50px;
+	color:white;
+    text-align: center;
+    z-index:2;
+}
+.content69
+{
+
+    width:1000px;
+    height:1000px;
+    border-radius:50%;
+    /*background-color:#fff;*/
+    position:absolute;
+    top:20px;
+    left:20px;
+    line-height: 1000px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:500px;
+	color:white;
+    text-align: center;
+    z-index:2;
+}
+
+/*TIMELINE STYLE*/
+body{
+    background-color: #f7f7f7;
+    margin-top:20px;
+}
+
+.main-timeline {
+    position: relative
+}
+
+.main-timeline:before {
+    content: "";
+    display: block;
+    width: 2px;
+    height: 100%;
+    background: #c6c6c6;
+    margin: 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0
+}
+
+.main-timeline .timeline {
+    margin-bottom: 40px;
+    position: relative
+}
+
+.main-timeline .timeline:after {
+    content: "";
+    display: block;
+    clear: both
+}
+
+.main-timeline .icon {
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0
+}
+
+.main-timeline .icon:before,
+.main-timeline .icon:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .icon:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -3px
+}
+
+.main-timeline .icon:after {
+    border: 2px solid #c6c6c6;
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:before {
+    left: 3px
+}
+
+.main-timeline .timeline:hover .icon:after {
+    left: -3px
+}
+
+.main-timeline .date-content {
+    width: 50%;
+    float: left;
+    margin-top: 22px;
+    position: relative
+}
+
+.main-timeline .date-content:before {
+    content: "";
+    width: 36.5%;
+    height: 2px;
+    background: #c6c6c6;
+    margin: auto 0;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    bottom: 0
+}
+
+.main-timeline .date-outer {
+    width: 125px;
+    height: 125px;
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+    z-index: 1
+}
+
+.main-timeline .date-outer:before,
+.main-timeline .date-outer:after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.33s ease-out 0s
+}
+
+.main-timeline .date-outer:before {
+    background: #fff;
+    border: 2px solid #232323;
+    left: -6px
+}
+
+.main-timeline .date-outer:after {
+    border: 2px solid #c6c6c6;
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:before {
+    left: 6px
+}
+
+.main-timeline .timeline:hover .date-outer:after {
+    left: -6px
+}
+
+.main-timeline .date {
+    width: 100%;
+    margin: auto;
+    position: absolute;
+    top: 27%;
+    left: 0
+}
+
+.main-timeline .month {
+    font-size: 18px;
+    font-weight: 700
+}
+
+.main-timeline .year {
+    display: block;
+    font-size: 30px;
+    font-weight: 700;
+    color: #232323;
+    line-height: 36px
+}
+
+.main-timeline .timeline-content {
+    width: 50%;
+    padding: 20px 0 20px 50px;
+    float: right
+}
+
+.main-timeline .title {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0 0 15px 0
+}
+
+.main-timeline .description {
+    margin-bottom: 0
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content {
+    float: right
+}
+
+.main-timeline .timeline:nth-child(2n) .date-content:before {
+    left: 10px
+}
+
+.main-timeline .timeline:nth-child(2n) .timeline-content {
+    padding: 20px 50px 20px 0;
+    text-align: right
+}
+
+@media only screen and (max-width: 991px) {
+    .main-timeline .date-content {
+        margin-top: 35px
+    }
+    .main-timeline .date-content:before {
+        width: 22.5%
+    }
+    .main-timeline .timeline-content {
+        padding: 10px 0 10px 30px
+    }
+    .main-timeline .title {
+        font-size: 17px
+    }
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        padding: 10px 30px 10px 0
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .main-timeline:before {
+        margin: 0;
+        left: 7px
+    }
+    .main-timeline .timeline {
+        margin-bottom: 20px
+    }
+    .main-timeline .timeline:last-child {
+        margin-bottom: 0
+    }
+    .main-timeline .icon {
+        margin: auto 0
+    }
+    .main-timeline .date-content {
+        width: 95%;
+        float: right;
+        margin-top: 0
+    }
+    .main-timeline .date-content:before {
+        display: none
+    }
+    .main-timeline .date-outer {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date-outer:before,
+    .main-timeline .date-outer:after {
+        width: 110px;
+        height: 110px
+    }
+    .main-timeline .date {
+        top: 30%
+    }
+    .main-timeline .year {
+        font-size: 24px
+    }
+    .main-timeline .timeline-content,
+    .main-timeline .timeline:nth-child(2n) .timeline-content {
+        width: 95%;
+        text-align: center;
+        padding: 10px 0
+    }
+    .main-timeline .title {
+        margin-bottom: 10px
+    }
+}
+
+
         </style>
     </head>
     <body>
@@ -206,44 +591,165 @@ button{
 <img class="logo1" src="images/fhi360.jpg" >
     </div>
 </header>
-    <div class="container h100">
-    <h1 class="titles">Balkan Media Assistance Program (BMAP)</h1>
-        <h3 class="countries">BOSNIA AND HERZEGOVINA<br/>
-        MONTENEGRO<br/>
-        KOSOVO<br/>
-        MACEDONIA (FYROM)<br/>
+    <div class="h100">
+    <h2 class="subtitle">BALKAN MEDIA ASSISTANCE PROGRAM <p class="countries">BOSNIA AND HERZEGOVINA |
+        MONTENEGRO |
+        KOSOVO |
+        NORTH MACEDONIA |
         SERBIA
-        </h3>
-        <p>We're working hard to finish the development of this site.</p>
-        <p><strong>BMAP</strong> seeks to enhance the professionalism and sustainability of media in the Balkan region by working with renowned and promising new media outlets to improve their digital content quality, business processes, and collaboration.</p>
+        </p></h2>>
+    <h2 class="naslov">FIRST 1000 DAYS</h2>
         <div id="wrapper">
-        <a href="https://www.internews.org/updates/balkan-media-assistance-program-launched"><button>LEARN MORE</button></a>
-        </div>
+        <a href="#"><button>LEARN MORE</button></a>
         </div>
         
-        <div class="social-icons">
-      <ul class="list-unstyled text-center mb-0">
-        <li class="list-unstyled-item">
-          <a href="http://www.twitter.com">
-            <i class="fa fa-twitter"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-          <a href="http://www.facebook.com">
-            <i class="fa fa-facebook"></i>
-          </a>
-        </li>
-        <li class="list-unstyled-item">
-        </li>
-      </ul>
+        </div>
+        <section>
+          <h2>About BMAP</h2>
+        <!-- <div class="container">-->
+        <div class="row">
+          <div class="col-2">
+            <h2 class="title">5</h3>
+              <h3 class="subtitle0">YEARS</h3>
+          </div>
+          <div class="col-2">
+            <h2 class="title" data-toggle="tooltip" data-placement="right" title="Tooltip on right">5</h2>
+            <h3 class="subtitle0">COUNTRIES</h3>
+            <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">BOSNIA AND HERZEGOVINA</p> 
+             <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">MONTENEGRO</p>  
+              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">KOSOVO</p> 
+              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">NORTH MACEDONIA</p> 
+              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: KRIK and Južne vesti">SERBIA</p> 
+          </div>
+          <div class="col-8">
+            <p class="description">The purpose of BMAP is to make media practitioners more competitive in the local and regional marketplace, and strengthen the sustainability of the independent media sector across the region, thus amplifying independent, local voices. The activity aims to do this by providing outlets and media partners with more substantial and stable resources to operate as viable enterprises, engage wider audiences and expand their reach within the region, and foster stronger partnerships to advance solutions on common challenges, particularly in the digital space.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="container">
+        <h2>Audience Increase <sup data-toggle="tooltip" data-placement="top" title="BMAP Media partners: KRIK, Južne vesti, Žurnal, Oslobođenje, Sloboden pečat, 360, Koha, MINA, Vijesti">12 key partners</sup> </h2>
+        <div class="row">
+          <div class="col-4">
+      
+      <div class="rings">   
+        <div class="pie">
+            <div class="title">PLANNED ANNUAL INCREASE
+                </div>
+        <div class="content" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>BMAP</strong> <br> has set a goal of assisting our Key Partners with increasing their annual traffic by 5%.">5%</DIV>
+        </div> 
+        </div>
+      </div>
+      <div class="col-4">
+      
+        <div class="rings">   
+          <div class="pie">
+              <div class="title">ANNUAL INCREASE YEAR 2
+                  </div>
+          <DIV class="content" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>BMAP</strong> <br> has achieved a goal of assisting our Key Partners with increasing their annual traffic by 29% in <b>Year 2</> of the project.">29%</DIV>
+          </div> 
+          </div>
+        </div>
+  <!--69% krug-->
+  <div class="col-4">
+      <div class="rings">   
+        <div class="pie">
+            <div class="title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+            sagittis lacus vel augue laoreet rutrum faucibus.">ANNUAL INCREASE YEAR 3
+                </div>
+        <DIV class="content">69%</DIV>
+        </div> 
+        </div>
+      </div>
+</div>
+</div>
     </div>
-        
+    </section>
+<section>
+  <h2>Number of Users Visiting</h2>
+</section>
+<section>
+  <h2>Number of Readers</h2>
+
+</section>
+<section>
+  <h2>Number of Readers: Demographic Data</h2>
+  
+</section>
+<section>
+  <h2>Engaging Women </h2>
+  <h4 class="countries">Stories Exclusively Targeting Information Needs of Women and Girls</h4>
+  
+</section>
+<section>
+  <h2>Partnerships and Networking</h2>
+  
+</section>
+<section>
+  <h2>Training Days <sup>Per Person</sup> </h2>
+  
+  
+</section>
+<section>
+  <h2>Engaging Content Grants (ECG)</h2>
+  
+  
+</section>
+<section>
+  <h2>Technology Grants (TIG)</h2>
+  
+  
+</section>
+<section>
+  <h2>Balkansmedia.org</h2>
+  
+  
+</section>
+<section>
+  <h2>Multimedia</h2>
+  
+  
+</section>
+<section>
+  <h2>Digital Security</h2>
+  
+  
+</section>
+<section>
+  <h2>COVID-19 Response</h2>
+  
+  
+</section>
 <footer>
         
-        
+        <p>Prepared by USAID Balkan Media Assistance Program</p>
 
         
         </footer>
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script>
+      $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
 
-    </body>
+    
+    
+    $(function () {
+  $('.example-popover').popover({
+    container: 'body'
+  })
+})
+
+$('.popover-dismiss').popover({
+  trigger: 'focus'
+})
+    
+    </script>
+  </body>
     </html>
