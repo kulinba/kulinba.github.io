@@ -95,7 +95,7 @@ font-weight: 200;
       
 .title{
   font-size: 68px;
-  color: white;
+  color: navy;
   display: block;
   padding-top: 50px;
   font-weight: 100;
@@ -270,10 +270,10 @@ button{
 
 .pie69
 {
-    width: 930px;
-    height: 930px;
+    width: 240px;
+    height: 240px;
     position: relative;
-    border-radius: 930px;
+    border-radius: 240px;
     background-color: red;
     float:left;
     margin-right:10px;
@@ -283,13 +283,23 @@ button{
     height:200px;
     padding-left:2em;
 }
-.pie .title
+.pie .title1
 {
     position:absolute;
     bottom:-40px;
     text-align: center;
     width:100%;
 	color:navy;
+}
+
+.pie69 .title1
+{
+    position:absolute;
+    bottom:-30px;
+    text-align: center;
+    width:100%;
+  color:red;
+  font-size: 1.9rem;
 }
 .content
 {
@@ -311,16 +321,16 @@ button{
 .content69
 {
 
-    width:1000px;
-    height:1000px;
+    width:200px;
+    height:200px;
     border-radius:50%;
     /*background-color:#fff;*/
     position:absolute;
     top:20px;
     left:20px;
-    line-height: 1000px;
+    line-height: 200px;
     font-family:Arial, Helvetica, sans-serif;
-    font-size:500px;
+    font-size:100px;
 	color:white;
     text-align: center;
     z-index:2;
@@ -580,7 +590,63 @@ body{
         margin-bottom: 10px
     }
 }
-
+/*TIMELINE CODE*/
+.hori-timeline .events {
+    border-top: 3px solid #dee2e6;
+}
+.hori-timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+.hori-timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+.hori-timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 2px;
+    font-size: 5rem;
+}
+@media (min-width: 1140px) {
+    .hori-timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+    .hori-timeline .events .event-list .event-date {
+        top: -50px;
+    }
+}
+.bg-soft-primary {
+    background-color: rgba(64,144,203,.3)!important;
+}
+.bg-soft-success {
+    background-color: rgba(71,189,154,.3)!important;
+}
+.bg-soft-danger {
+    background-color: rgba(231,76,94,.3)!important;
+}
+.bg-soft-warning {
+    background-color: rgba(249,213,112,.3)!important;
+}
+.card {
+    border: none;
+    margin-bottom: 24px;
+    -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+    box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+}
 
         </style>
     </head>
@@ -610,16 +676,16 @@ body{
         <!-- <div class="container">-->
         <div class="row">
           <div class="col-2">
-            <h2 class="title">5</h3>
+            <h2>5</h2>
               <h3 class="subtitle0">YEARS</h3>
           </div>
           <div class="col-2">
-            <h2 class="title" data-toggle="tooltip" data-placement="right" title="Tooltip on right">5</h2>
+            <h2 data-toggle="tooltip" data-placement="right" title="Tooltip on right">5</h2>
             <h3 class="subtitle0">COUNTRIES</h3>
-            <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">BOSNIA AND HERZEGOVINA</p> 
-             <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">MONTENEGRO</p>  
-              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">KOSOVO</p> 
-              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Zurnal">NORTH MACEDONIA</p> 
+            <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Oslobodenje and Žurnal">BOSNIA AND HERZEGOVINA</p> 
+             <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: MINA and Vijesti">MONTENEGRO</p>  
+              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Koha and Radio KIM">KOSOVO</p> 
+              <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: Sloboden pečat and 360">NORTH MACEDONIA</p> 
               <p data-toggle="tooltip" data-placement="right" title="BMAP Media partners: KRIK and Južne vesti">SERBIA</p> 
           </div>
           <div class="col-8">
@@ -637,30 +703,29 @@ body{
       
       <div class="rings">   
         <div class="pie">
-            <div class="title">PLANNED ANNUAL INCREASE
+            <div class="title1">PLANNED ANNUAL INCREASE
                 </div>
         <div class="content" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>BMAP</strong> <br> has set a goal of assisting our Key Partners with increasing their annual traffic by 5%.">5%</DIV>
         </div> 
         </div>
       </div>
       <div class="col-4">
-      
         <div class="rings">   
-          <div class="pie">
-              <div class="title">ANNUAL INCREASE YEAR 2
-                  </div>
-          <DIV class="content" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>BMAP</strong> <br> has achieved a goal of assisting our Key Partners with increasing their annual traffic by 29% in <b>Year 2</> of the project.">29%</DIV>
+          <div class="pie69">
+          <DIV class="content69" data-toggle="tooltip" data-placement="right" data-html="true" title="<strong>BMAP</strong> <br> has achieved a goal of assisting our Key Partners with increasing their annual traffic by 29% in <b>Year 2</> of the project.">29%</DIV>
+            <div class="title1">ANNUAL INCREASE YEAR 2</div>
           </div> 
           </div>
         </div>
+        
   <!--69% krug-->
   <div class="col-4">
       <div class="rings">   
-        <div class="pie">
-            <div class="title" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
+        <div class="pie69">
+            <div class="title1" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus
             sagittis lacus vel augue laoreet rutrum faucibus.">ANNUAL INCREASE YEAR 3
                 </div>
-        <DIV class="content">69%</DIV>
+        <DIV class="content69">69%</DIV>
         </div> 
         </div>
       </div>
@@ -668,8 +733,57 @@ body{
 </div>
     </div>
     </section>
+<!--TIMELINE SECTION-->
 <section>
   <h2>Number of Users Visiting</h2>
+  <div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="">
+                <div class="card-body">    
+                    <div class="hori-timeline" dir="ltr">
+                        <ul class="list-inline events">
+                            <li class="list-inline-item event-list">
+                                <div class="px-4">
+                                    <div class="event-date bg-soft-primary text-primary">8.4</div>
+                                    <h5 class="font-size-16">BASELINE</h5>
+                                    <p class="text-muted">This is a number of total users in milions collected at the beginning of the project</p>
+                                  
+                                </div>
+                            </li>
+                            <li class="list-inline-item event-list">
+                                <div class="px-4">
+                                    <div class="event-date bg-soft-success text-success">10.8</div>
+                                    <h5 class="font-size-16">YEAR 2 INCREASE</h5>
+                                    <p class="text-muted">Everyone realizes why a new common language one could refuse translators.</p>
+                        
+                                </div>
+                            </li>
+                            <li class="list-inline-item event-list">
+                                <div class="px-4">
+                                    <div class="event-date bg-soft-danger text-danger">7 June</div>
+                                    <h5 class="font-size-16">Event Three</h5>
+                                    <p class="text-muted">If several languages coalesce the grammar of the resulting simple and regular</p>
+
+                                </div>
+                            </li>
+                            <li class="list-inline-item event-list">
+                                <div class="px-4">
+                                    <div class="event-date bg-soft-warning text-warning">8 June</div>
+                                    <h5 class="font-size-16">Event Four</h5>
+                                    <p class="text-muted">Languages only differ in their pronunciation and their most common words.</p>
+                                    <div>
+                                        <a href="#" class="btn btn-primary btn-sm">Read more</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- end card -->
+        </div>
+    </div>
 </section>
 <section>
   <h2>Number of Readers</h2>
