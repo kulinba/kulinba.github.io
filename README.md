@@ -1,5 +1,5 @@
 # kulinba.github.io
 ## BMAP Program
-placeholder site
+Ovo je testni web za predmet Web dizajn
 ## Description
 This was a placeholder site for balkansmedia.org
